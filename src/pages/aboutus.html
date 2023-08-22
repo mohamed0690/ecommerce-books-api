@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us | Booken</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/media-query.css">
+    <!-- 
+    - favicon
+  -->
+    <link rel="shortcut icon" href="../../favicon.svg" type="image/svg+xml">
+
+    <!-- 
+  - custom css link
+-->
+
+    <!-- 
+  - google font link
+-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Jost:wght@400;500;600&family=Work+Sans:wght@400;500;700&display=swap"
+        rel="stylesheet">
+    <!-- 
+  - preload images
+-->
+    <link rel="preload" as="image" href="../images/hero-banner.png">
+    <link rel="preload" as="image" href="../images/hero-bg.jpg">
+</head>
+
+<body>
+    <header class="header">
+        <div class="header-top">
+            <div class="container">
+
+                <a href="#" class="logo">
+                    <img src="../images/logo.svg" width="138" height="28" alt="booken home">
+                </a>
+
+                <div class="input-wrapper">
+                    <input type="search" name="search" placeholder="Search our store" class="input-field">
+
+                    <button onclick="search()" class="btn btn-primary">Search</button>
+                </div>
+
+                <div class="header-action">
+
+                    <button class="header-action-btn" title="Cart">
+                        <span class="span">0</span>
+
+                        <ion-icon name="bag-handle-outline"></ion-icon>
+                    </button>
+
+                    <button class="nav-open-btn nav-toggler" title="Open Menu">
+                        <ion-icon name="menu-outline"></ion-icon>
+                    </button>
+
+                    <button class="header-action-btn" title="User">
+                        <ion-icon name="person-outline"></ion-icon>
+                    </button>
+
+                </div>
+
+            </div>
+        </div>
+
+        <div class="header-bottom">
+            <div class="container">
+
+                <nav class="navbar">
+
+                    <button class="nav-close-btn nav-toggler" title="Clsoe Menu">
+                        <ion-icon name="close-outline"></ion-icon>
+                    </button>
+
+                    <div class="navbar-top">
+                        <input type="search" name="search" placeholder="Search our store" class="input-field">
+
+                        <button class="search-btn">
+                            <ion-icon name="search-outline"></ion-icon>
+                        </button>
+                    </div>
+
+                    <ul class="navbar-list">
+
+                        <li>
+                            <a href="../../index.html" class="navbar-link">Home</a>
+                        </li>
+
+                        <li>
+                            <a href="#" class="navbar-link">Blog</a>
+                        </li>
+
+                        <li>
+                            <a href="#" class="navbar-link">Shop</a>
+                        </li>
+
+                        <li>
+                            <a href="./aboutus.html" class="navbar-link">About Us</a>
+                        </li>
+
+                        <li>
+                            <a href="./contact.html" class="navbar-link">Contact</a>
+                        </li>
+
+                    </ul>
+
+                </nav>
+
+                <a href="tel:+0123456789" class="header-contact-link">
+                    <ion-icon name="headset-outline"></ion-icon>
+
+                    <span class="span">(+01)-234-56789</span>
+                </a>
+
+            </div>
+        </div>
+
+        <div class="overlay nav-toggler data-overlay"></div>
+    </header>
+
+
+    <main>
+        <article>
+            <section class="section hero has-bg-image" style="background-image: url('../images/hero-bg.jpg')">
+                <div class="w-100 container">
+                    <div class="w-100">
+                        <h1 class="h2">About Us</h1>
+                        <p>Welcome to Booken, your number one online destination for a vast collection of books. We are
+                            dedicated to providing you with a wide range of books in various genres and categories,
+                            ensuring
+                            you
+                            have
+                            access to your favorite reads right at your fingertips.</p>
+                    </div>
+                    <div class="w-100">
+
+                        <h2>Our Mission</h2>
+                        <p>At Booken, our mission is to promote the joy of reading and knowledge exploration. We believe
+                            that
+                            books have the power to transform lives, and we strive to make quality reading material
+                            accessible
+                            to
+                            everyone, from avid readers to newcomers.</p>
+                    </div>
+                    <div class="w-100">
+                        <h2>Our Team</h2>
+                        <p>We are a team of passionate book lovers who are committed to curating an exceptional
+                            collection
+                            of
+                            books for
+                            our customers. Our dedicated team members work tirelessly to ensure that you have a seamless
+                            and
+                            delightful
+                            shopping experience on our website.</p>
+                    </div>
+                    <div>
+
+                        <h2>Why Choose Us?</h2>
+                        <p>Here are a few reasons why choosing Booken is the best decision for all your reading needs:
+                        </p>
+                        <ul>
+                            <li>A vast and sectionerse collection of books spanning various genres and authors.</li>
+                            <li>Competitive prices and regular discounts to make reading affordable for all.</li>
+                            <li>Fast and reliable delivery options to get your books to you as quickly as possible.</li>
+                            <li>Secure and user-friendly website for a hassle-free shopping experience.</li>
+                            <li>Excellent customer support to assist you with any queries or concerns.</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h2>Contact Us</h2>
+                        <p>If you have any questions, feedback, or suggestions, please don't hesitate to get in touch
+                            with
+                            us.
+                            You can
+                            reach us through our contact page or email us at contact@booken.com.</p>
+                    </div>
+                </div>
+            </section>
+        </article>
+    </main>
+
+
+
+    <footer class="footer has-bg-image" style="background-image: url('./src/images/section-bg.jpg')">
+
+        <div class="footer-top section">
+            <div class="container grid-list">
+
+                <div class="footer-brand">
+
+                    <a href="#" class="logo">
+                        <img src="../images/logo.svg" width="138" height="28" alt="booken home">
+                    </a>
+
+                    <p class="footer-text">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing
+                        elit sed do eiusmod tempor inci ut labore et
+                        dolore
+                        consectetur
+                        adipisicing elit sed do eiusmod tempor.
+                    </p>
+
+                    <ul class="social-list">
+
+                        <li>
+                            <a href="#" class="social-link">
+                                <ion-icon name="logo-facebook"></ion-icon>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#" class="social-link">
+                                <ion-icon name="logo-twitter"></ion-icon>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#" class="social-link">
+                                <ion-icon name="logo-instagram"></ion-icon>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#" class="social-link">
+                                <ion-icon name="logo-youtube"></ion-icon>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#" class="social-link">
+                                <ion-icon name="logo-pinterest"></ion-icon>
+                            </a>
+                        </li>
+
+                    </ul>
+
+                </div>
+
+                <ul class="footer-list">
+
+                    <li>
+                        <p class="footer-list-title">Corporate</p>
+                    </li>
+
+                    <li>
+                        <a href="#" class="footer-link">Careers</a>
+                    </li>
+
+                    <li>
+                        <a href="#" class="footer-link">About Us</a>
+                    </li>
+
+                    <li>
+                        <a href="#" class="footer-link">Contact Us</a>
+                    </li>
+
+                    <li>
+                        <a href="#" class="footer-link">FAQs</a>
+                    </li>
+
+                    <li>
+                        <a href="#" class="footer-link">Vendors</a>
+                    </li>
+
+                </ul>
+
+                <ul class="footer-list">
+
+                    <li>
+                        <p class="footer-list-title">Information</p>
+                    </li>
+
+                    <li>
+                        <a href="#" class="footer-link">Online Store</a>
+                    </li>
+
+                    <li>
+                        <a href="#" class="footer-link">Privacy Policy</a>
+                    </li>
+
+                    <li>
+                        <a href="#" class="footer-link">Refund Policy</a>
+                    </li>
+
+                    <li>
+                        <a href="#" class="footer-link">Shipping Policy</a>
+                    </li>
+
+                    <li>
+                        <a href="#" class="footer-link">Terms of Service</a>
+                    </li>
+
+                </ul>
+
+                <ul class="footer-list">
+
+                    <li>
+                        <p class="footer-list-title">Services</p>
+                    </li>
+
+                    <li>
+                        <a href="#" class="footer-link">Grooming</a>
+                    </li>
+
+                    <li>
+                        <a href="#" class="footer-link">Positive Dog
+                            Training</a>
+                    </li>
+
+                    <li>
+                        <a href="#" class="footer-link">Veterinary Services</a>
+                    </li>
+
+                    <li>
+                        <a href="#" class="footer-link">Insurance</a>
+                    </li>
+
+                    <li>
+                        <a href="#" class="footer-link">Book Writing</a>
+                    </li>
+
+                </ul>
+
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <div class="container">
+
+                <p class="copyright">
+                    Copyright 2022 | Made With Love by mohamedmahrous.
+                </p>
+
+                <img src="../images/payment-mehtod.png" width="311" height="30" loading="lazy" alt="Payment method"
+                    class="w-100">
+
+            </div>
+        </div>
+
+    </footer>
+
+    <script src="../js/sort.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+
+
+
+</body>
+
+</html>

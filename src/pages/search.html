@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booken - Get Your New Book Collections</title>
+    <meta name="title" content="Booken - Get Your New Book Collections">
+    <link rel="shortcut icon" href="../../favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/media-query.css">
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Jost:wght@400;500;600&family=Work+Sans:wght@400;500;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body id="top">
+    <header class="header">
+        <div class="header-top">
+            <div class="container">
+                <a href="../../index.html" class="logo">
+                    <img src="../images/logo.svg" width="138" height="28" alt="booken home">
+                </a>
+                <div class="input-wrapper">
+                    <input type="search" name="search" placeholder="Search our store" id="search-query"
+                        class="input-field">
+
+                    <button id="search-btn" onclick="search()" class="btn btn-primary">Search</button>
+                </div>
+
+                <div class="header-action">
+
+                    <button class="header-action-btn" title="Cart">
+                        <span class="span wishcard-span">0</span>
+
+                        <ion-icon name="bag-handle-outline"></ion-icon>
+                    </button>
+
+                    <button class="nav-open-btn nav-toggler" title="Open Menu">
+                        <ion-icon name="menu-outline"></ion-icon>
+                    </button>
+
+                    <button class="header-action-btn" title="User">
+                        <ion-icon name="person-outline"></ion-icon>
+                    </button>
+
+                </div>
+
+            </div>
+        </div>
+
+
+        <div class="overlay nav-toggler data-overlay"></div>
+    </header>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <main>
+        <article>
+
+            <section class="overview section hero has-bg-image" style="background-image: url('../images/hero-bg.jpg')">
+                <div class="container">
+                    <div class="hero-content">
+                        <div class="h2  has-after" id="book-title"></div>
+                        <div class="hero-text" id="book-authors"></div>
+                        <div class="hero-text" id="book-description"></div>
+                        <div class="hero-text" id="book-published-date"></div>
+                        <div class="hero-text" id="book-categories"></div>
+                        <a class="book-info-link" id="book-info-link" href="#" target="_blank">More Info</a>
+                    </div>
+
+
+                    <figure class="hero-content">
+                        <img id="overview-book-image" src="" width="475" height="600" alt="hero banner" class="w-100">
+                    </figure>
+                </div>
+            </section>
+
+
+
+            <section style="margin-top: 100px;" class="section featured">
+                <div class="container">
+
+                    <h2 class="h2 section-title">search result for <div id="span-query"></div>
+                    </h2>
+
+
+                    <ul id="results" class="grid-list">
+
+
+                    </ul>
+
+                </div>
+            </section>
+
+        </article>
+    </main>
+
+
+
+
+
+
+    <footer class="footer has-bg-image" style="background-image: url('../images/section-bg.jpg')">
+
+        <div class="footer-top section">
+            <div class="container grid-list">
+
+                <div class="footer-brand">
+
+                    <a href="#" class="logo">
+                        <img src="../images/logo.svg" width="138" height="28" alt="booken home">
+                    </a>
+
+                    <p class="footer-text">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit sed do eiusmod tempor inci ut labore et
+                        dolore
+                        consectetur
+                        adipisicing elit sed do eiusmod tempor.
+                    </p>
+
+                    <ul class="social-list">
+
+                        <li>
+                            <a href="#" class="social-link">
+                                <ion-icon name="logo-facebook"></ion-icon>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#" class="social-link">
+                                <ion-icon name="logo-twitter"></ion-icon>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#" class="social-link">
+                                <ion-icon name="logo-instagram"></ion-icon>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#" class="social-link">
+                                <ion-icon name="logo-youtube"></ion-icon>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#" class="social-link">
+                                <ion-icon name="logo-pinterest"></ion-icon>
+                            </a>
+                        </li>
+
+                    </ul>
+
+                </div>
+
+                <ul class="footer-list">
+
+                    <li>
+                        <p class="footer-list-title">Corporate</p>
+                    </li>
+
+                    <li>
+                        <a href="#" class="footer-link">Careers</a>
+                    </li>
+
+                    <li>
+                        <a href="#" class="footer-link">About Us</a>
+                    </li>
+
+                    <li>
+                        <a href="#" class="footer-link">Contact Us</a>
+                    </li>
+
+                    <li>
+                        <a href="#" class="footer-link">FAQs</a>
+                    </li>
+
+                    <li>
+                        <a href="#" class="footer-link">Vendors</a>
+                    </li>
+
+                </ul>
+
+                <ul class="footer-list">
+
+                    <li>
+                        <p class="footer-list-title">Information</p>
+                    </li>
+
+                    <li>
+                        <a href="#" class="footer-link">Online Store</a>
+                    </li>
+
+                    <li>
+                        <a href="#" class="footer-link">Privacy Policy</a>
+                    </li>
+
+                    <li>
+                        <a href="#" class="footer-link">Refund Policy</a>
+                    </li>
+
+                    <li>
+                        <a href="#" class="footer-link">Shipping Policy</a>
+                    </li>
+
+                    <li>
+                        <a href="#" class="footer-link">Terms of Service</a>
+                    </li>
+
+                </ul>
+
+                <ul class="footer-list">
+
+                    <li>
+                        <p class="footer-list-title">Services</p>
+                    </li>
+
+                    <li>
+                        <a href="#" class="footer-link">Grooming</a>
+                    </li>
+
+                    <li>
+                        <a href="#" class="footer-link">Positive Dog Training</a>
+                    </li>
+
+                    <li>
+                        <a href="#" class="footer-link">Veterinary Services</a>
+                    </li>
+
+                    <li>
+                        <a href="#" class="footer-link">Insurance</a>
+                    </li>
+
+                    <li>
+                        <a href="#" class="footer-link">Book Writing</a>
+                    </li>
+
+                </ul>
+
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <div class="container">
+
+                <p class="copyright">
+                    Copyright 2022 | Made With Love by Mohamed Mahrous.
+                </p>
+
+                <img src="../images/payment-mehtod.png" width="311" height="30" loading="lazy" alt="Payment method"
+                    class="w-100">
+
+            </div>
+        </div>
+
+    </footer>
+
+    <a href="#top" class="back-top-btn" data-back-top-btn>
+        <ion-icon name="chevron-up"></ion-icon>
+    </a>
+    <script type="module" src="../js/search.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>
