@@ -6,7 +6,7 @@ const spans = document.querySelectorAll(".spans");
 
 const nameRegex = /^[a-zA-Z]{2,10}( [a-zA-Z]{2,10})?$/;
 const emailRegex = /^[A-Za-z0-9+_.-]{3,20}@[a-z]{3,6}\.[a-z]{2,6}$/;
-const messageRegex = /^[A-Za-z]{8,}$/;
+const messageRegex = /^[A-Z a-z]{8,}$/;
 
 nameInput.addEventListener("input", () => {
   validation(spans[0], nameInput, nameRegex.test(nameInput.value.trim()));
