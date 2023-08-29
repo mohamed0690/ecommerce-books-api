@@ -1,10 +1,14 @@
 "use strict";
-const API_KEY = "AIzaSyALOd4ACbhf3Mi3vpfp2pB-Jn-3jpc6Lfs";
+const API_KEY = "AIzaSyBOhgzwDsIiyEMvcLvgTKSiSgbOCK09bKc";
 export const fetchData = function (URL, callback) {
-  fetch(`${URL}key=${API_KEY}`)
-    .then((res) => res.json())
-    .then((data) => callback(data))
-    .catch((error) => console.error("Error fetching data:", error));
+  try {
+    fetch(`${URL}key=${API_KEY}`)
+      .then((res) => res.json())
+      .then((data) => callback(data))
+      .catch((error) => console.log("Error fetching data:", error));
+  } catch (e) {
+    console.log("error");
+  }
 };
 export const url = {
   searchBooks(searchQuery, maxResults) {

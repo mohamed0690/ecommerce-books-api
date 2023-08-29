@@ -1,6 +1,6 @@
 import { fetchData, url } from "./api.js";
 import { extractBookData, showBookRate } from "./module.js";
-const loading = document.querySelectorAll("[data-loading]");
+//const loading = document.querySelectorAll("[data-loading]");
 export function fetchAndPopulateBooks(
   bookListElement,
   createBookListItem,
@@ -10,17 +10,19 @@ export function fetchAndPopulateBooks(
 ) {
   // loading.style.display = "grid";
   fetchData(url.searchBooks(query, maxResults), function (data) {
-    loading[0].style.display = "grid";
-    if (data && data.items && Array.isArray(data.items)) {
-      data.items.forEach((item) => {
-        const book = extractBookData(item);
-        const bookItem = createBookListItem(book, classes);
-        bookListElement.appendChild(bookItem);
-      });
-      loading[0].style.display = "none";
-      // loading[1].style.display = "none";
-    } else {
-      console.error("Invalid or empty API response:", data);
+    try {
+      console.log(data);
+      if (data && data.items && Array.isArray(data.items)) {
+        data.items.forEach((item) => {
+          const book = extractBookData(item);
+          const bookItem = createBookListItem(book, classes);
+          bookListElement.appendChild(bookItem);
+        });
+      } else {
+        console.log("Invalid  API response:", data);
+      }
+    } catch (error) {
+      console.log("error  while processing data:", error);
     }
   });
 }
@@ -125,24 +127,40 @@ export function setIdsInLocStor(id, key) {
   }
 }
 export function cartCounter(ele, key) {
-  let val;
-  let result;
-  if (key != "wishlist") {
-    val = localStorage.getItem("add_to_cart_books");
+  try {
+    let val;
+    let result;
+
+    if (key !== "wishlist") {
+      val = localStorage.getItem("add_to_cart_books");
+      if (val === null) {
+        ele.innerHTML = 0;
+        return [];
+      }
+    } else {
+      val = localStorage.getItem("wishlist_books");
+    }
+
+    if (val === null || val.trim() === "") {
+      ele.innerHTML = 0;
+      return [];
+    }
+
     result = val.split(",");
     ele.innerHTML = result.length;
-  } else {
-    val = localStorage.getItem("wishlist_books");
-    result = val.split(",");
+    return result;
+  } catch (error) {
+    console.error("An error occurred:", error);
+    return [];
   }
-  return result;
 }
+
 function filter(btn, lastClickedBtn) {
   lastClickedBtn.classList.remove("active");
   btn.classList.add("active");
   const bookList = document.getElementById("book-list_2");
   bookList.innerHTML = "";
-  loading[1].style.display = "grid";
+  // loading[1].style.display = "grid";
   fetchAndPopulateBooks(
     bookList,
     createBookListItem,

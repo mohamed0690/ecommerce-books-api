@@ -28,4 +28,11 @@ export function overviewBook(id) {
     document.querySelector(".overview").style.display = "block";
   });
 }
-overviewBook(localStorage.getItem("id_overview_book"));
+if (localStorage.getItem("id_overview_book")) {
+  localStorage.setItem(
+    "id_overview_book_2",
+    localStorage.getItem("id_overview_book")
+  );
+  localStorage.removeItem("id_overview_book");
+}
+overviewBook(localStorage.getItem("id_overview_book_2"));

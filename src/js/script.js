@@ -1,6 +1,6 @@
 "use strict";
 
-const addEventOnElem = (elem, type, callback) => {
+ const addEventOnElem = (elem, type, callback) => {
   if (elem.length > 1) {
     elem.forEach((e) => e.addEventListener(type, callback));
   } else {

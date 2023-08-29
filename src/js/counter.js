@@ -1,7 +1,7 @@
 "use strict";
 import { updateCountdown } from "./module.js";
 const countdownItems = document.querySelectorAll(".countdown-time");
-const targetDate = new Date("2023-08-20T12:00:00");
+const targetDate = new Date("2023-09-20T12:00:00");
 const countdownInterval = setInterval(function () {
   const { days, hours, minutes, seconds } = updateCountdown(
     targetDate,

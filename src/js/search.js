@@ -26,16 +26,14 @@ function displayResults(data) {
               <div class="card-banner img-holder" style="--width: 384; --height: 480;">
                   <img src=${image} width="384" height="480" loading="lazy" alt="Book Hard Cover" class="img-cover">
                   <div class="card-action">
-                  <button  class="action-btn quick-view btn-view"  title="Quick View">
+                  <button  class="action-btn quick-view btn-view2" data-id="${id}" title="Quick View">
                   <ion-icon name="eye-outline"></ion-icon>
                 </button>
 
-                      <button class="action-btn" onclick="addToWishList(${JSON.stringify(
-                        item
-                      )})" title="Add to Wishlist">
+                      <button class="action-btn wish-list-btn" data-id="${id}" title="Add to Wishlist">
                           <ion-icon name="heart-outline"></ion-icon>
                       </button>
-                      <button class="action-btn" title="Add to Cart">
+                      <button data-id="${id}" class="action-btn add-to-cart-btn" title="Add to Cart">
                           <ion-icon name="bag-handle-outline"></ion-icon>
                       </button>
                   </div>
@@ -77,7 +75,7 @@ function addToWishList(index) {
   cards.push(JSON.parse(localStorage.getItem("data")[index]));
 }
 function showOverviewWhenClick() {
-  const quick_view_btns = document.querySelectorAll(".btn-view");
+  const quick_view_btns = document.querySelectorAll(".btn-view2");
   quick_view_btns.forEach((button, index) => {
     button.addEventListener("click", function () {
       overviewBook(booksId[index]);

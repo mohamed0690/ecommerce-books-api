@@ -15,7 +15,7 @@ export const extractBookData = function (book) {
     : "Unknown";
   const image = book.volumeInfo.imageLinks?.thumbnail;
   let price = book.saleInfo.listPrice?.amount || "free";
-  price !== "free" ? (price += "LE") : price;
+  price = price !== "free" ? price + "LE" : price;
   const categories = book.volumeInfo.categories
     ? book.volumeInfo.categories.join(", ")
     : "Unknown";
