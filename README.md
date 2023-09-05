@@ -20,7 +20,7 @@ Welcome to the E-Commerce Books project! This web application allows users to br
 
 ## Demo
 
-You can check out a live demo of the project at [Demo Link](https://your-demo-link.com](https://mohamed0690.github.io/ecommerce-books-api/)).
+You can check out a live demo of the project at [Demo Link](https://mohamed0690.github.io/ecommerce-books-api/).
 
 ## Features
 
