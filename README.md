@@ -2,7 +2,7 @@
 
 Welcome to the E-Commerce Books project! This web application allows users to browse and purchase books using the Google Books API. It's built with HTML, CSS, and native JavaScript.
 
-![Project Video Demo]([screenshot.png](https://res.cloudinary.com/dcqttctnu/video/upload/v1693929450/Screencast_from_05_%D8%B3%D8%A8%D8%AA_2023_EEST_06_03_16_%D9%85_u9wssn.webm)) <!-- Add a screenshot of your project -->
+![Project Video Demo]([screenshot.png](https://res.cloudinary.com/dcqttctnu/video/upload/v1693929450/Screencast_from_05_%D8%B3%D8%A8%D8%AA_2023_EEST_06_03_16_%D9%85_u9wssn.webm) <!-- Add a screenshot of your project -->
 
 ## Table of Contents
 
