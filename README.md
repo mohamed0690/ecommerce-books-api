@@ -12,11 +12,8 @@ Welcome to the E-Commerce Books project! This web application allows users to br
 - [Getting Started](#getting-started)
   - [Prerequisites](#prerequisites)
   - [Installation](#installation)
-- [Usage](#usage)
-- [Contributing](#contributing)
 - [License](#license)
-- [Acknowledgments](#acknowledgments)
-
+  
 ## Demo
 
 You can check out a live demo of the project at [Demo Link](https://mohamed0690.github.io/ecommerce-books-api/).
